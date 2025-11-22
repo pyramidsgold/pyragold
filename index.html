@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pyramids Gold | بيراميدز جولد</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              gold: {
+                100: '#FFF9C4',
+                200: '#FFF59D',
+                300: '#FFF176',
+                400: '#FFEE58',
+                500: '#FFEB3B', // Base Gold
+                600: '#FDD835',
+                700: '#FBC02D',
+                800: '#F9A825',
+                900: '#F57F17',
+                DEFAULT: '#FFD700', // Classic Gold
+                metallic: '#D4AF37',
+              },
+              dark: {
+                bg: '#121212',
+                surface: '#1E1E1E',
+                card: '#252525',
+              }
+            },
+            boxShadow: {
+              'gold-glow': '0 0 15px rgba(255, 215, 0, 0.3)',
+              '3d': '0 10px 20px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.1)',
+              'inner-glow': 'inset 0 0 20px rgba(255, 215, 0, 0.05)',
+            },
+            fontFamily: {
+              sans: ['Kufam', 'sans-serif'],
+            }
+          },
+        },
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <style>
+      body {
+        background-color: #121212;
+        color: #e5e5e5;
+        font-family: 'Kufam', sans-serif;
+      }
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #1a1a1a; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #b8860b; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #ffd700; 
+      }
+      @media print {
+        .no-print { display: none !important; }
+        body { background-color: white; color: black; }
+        .print-only { display: block !important; }
+        .print-dark-text { color: black !important; }
+        .print-border { border: 1px solid #000 !important; }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.4.1"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
